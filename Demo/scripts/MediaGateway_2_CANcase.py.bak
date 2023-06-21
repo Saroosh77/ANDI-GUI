@@ -1,0 +1,23 @@
+from time import sleep
+
+def on_can_msg_received(msg):
+    print "Received following message from the CAncase: {0}".format(msg.can_header.message_id)
+
+g_can_msg.on_message_received += on_can_msg_received
+g_can_msg.start_capture()
+
+sleep(1)
+
+print "Ready to capture CAN messages over CANcase"
+
+g_can_msg.can_header.message_id = 123
+g_can_msg.can_header.length = 8
+g_can_msg.payload = System.Array[Byte](bytearray.fromhex("01 02 03 04 09"))
+
+print "Sending CAN message to MediaGateway CAN channel A"
+g_can_msg.send()
+
+sleep(2)
+
+g_can_msg.stop_capture()
+g_can_msg.on_message_received -= on_can_msg_received
