@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestProjectImpl>
+	<name>3.4.1_Task1</name>
+	<Attributes type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.AttributesImpl">
+		<AttributesImpl>
+			<name>Variables</name>
+			<ChildNamePrefix>g_variable</ChildNamePrefix>
+		</AttributesImpl>
+	</Attributes>
+	<DataBases type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.DataBasesImpl">
+		<DataBasesImpl>
+			<name>Databases</name>
+			<ChildNamePrefix>dataBase</ChildNamePrefix>
+		</DataBasesImpl>
+	</DataBases>
+	<DirectoryFileName>3.4.1_Task1</DirectoryFileName>
+	<Ecus type="PrimaTestCaseLibrary.RestBusSimulation.EcusImpl">
+		<EcusImpl>
+			<name>Nodes</name>
+			<ChildNamePrefix>node</ChildNamePrefix>
+		</EcusImpl>
+	</Ecus>
+	<Functions type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.FunctionsImpl">
+		<FunctionsImpl>
+			<name>Modules</name>
+			<ChildNamePrefix>g_module</ChildNamePrefix>
+			<GroupeNamePrefix>g_group</GroupeNamePrefix>
+		</FunctionsImpl>
+	</Functions>
+	<Messages type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.MessagesImpl">
+		<MessagesImpl>
+			<name>Messages</name>
+			<ChildNamePrefix>msg</ChildNamePrefix>
+		</MessagesImpl>
+	</Messages>
+	<Panels type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.PanelsImpl">
+		<PanelsImpl>
+			<name>Panels</name>
+			<ChildNamePrefix>panel</ChildNamePrefix>
+		</PanelsImpl>
+	</Panels>
+	<ScriptNodes type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.NodesImpl">
+		<NodesImpl>
+			<name>Scripts</name>
+			<ChildNamePrefix>script</ChildNamePrefix>
+			<TestSuitePrefix>scripts_group</TestSuitePrefix>
+		</NodesImpl>
+	</ScriptNodes>
+	<spec_reference>Bmw</spec_reference>
+	<Timers type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.TimersImpl">
+		<TimersImpl>
+			<name>Timers</name>
+			<ChildNamePrefix>g_timer</ChildNamePrefix>
+		</TimersImpl>
+	</Timers>
+	<version>1.16.0</version>
+</TestProjectImpl>

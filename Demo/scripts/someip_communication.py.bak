@@ -1,0 +1,46 @@
+from g_module_aux_methods import *
+
+
+counter = 0
+
+# A specific sender address we need to react to
+ECU_ip = "160.48.199.130"
+
+# The Service Discovery message object we will use as "buffer" for incoming traffic
+sd_message = message_builder.create_someip_sd_message(Logging.name, Logging.name)
+
+# Reaction to received Service Discovery message and counting how many
+#Checings if it does contain a specific Service Discovery entry or not can be done here
+def message_handler(msg):
+    global counter
+    
+    if msg.ip_header.ip_address_source == ECU_ip:
+        for entry in msg.get_offer_service_entries():
+            print "OfferService entry captured from {0} providing Service-ID: {1}".format(ECU_ip, entry.service_id)
+            counter = counter + 1
+
+sd_message.on_message_received += message_handler
+sd_message.start_capture()
+
+for entry in g_sd_msg_1.get_offer_service_entries():
+    print entry
+
+sleep(2)
+
+# Reproduce a PCAP with some traffic in it, 5 times (optional)
+#Stimulation.start_pcap_player(5, current_script.TestProject.DirectoryName + "\\PCAP\\Offers.pcap")
+
+# Or capture live traffic (optional)
+
+sleep(5)
+
+sd_message.stop_capture()
+sd_message.on_message_received -= message_handler
+
+print "This script has reacted to a total of {0} messages".format(counter)
+
+# Now let's also return back a result if any message was captured or not
+if counter > 0:
+    tc_return_success()
+else:
+    tc_return_failure()

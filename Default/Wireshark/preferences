@@ -1,0 +1,11 @@
+signal_pdu.payload_dissector_activated: TRUE
+nameres.dns_pkt_addr_resolution: FALSE
+nameres.network_name: TRUE
+nameres.use_external_name_resolver: FALSE
+nameres.vlan_name: TRUE
+someip.ports.udp: 30490
+someip.ports.tcp: 
+pdu_transport.ports.udp: 
+pdu_transport.ports.tcp: 
+someipsd.ports.udp.ignore: 
+someipsd.ports.tcp.ignore: 

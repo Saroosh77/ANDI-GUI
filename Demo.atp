@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestProjectImpl>
+	<name>Demo</name>
+	<Attributes type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.AttributesImpl">
+		<AttributesImpl>
+			<name>Variables</name>
+			<ChildNamePrefix>g_variable</ChildNamePrefix>
+		</AttributesImpl>
+	</Attributes>
+	<DataBases type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.DataBasesImpl">
+		<DataBasesImpl>
+			<name>Databases</name>
+			<ChildNamePrefix>dataBase</ChildNamePrefix>
+		</DataBasesImpl>
+	</DataBases>
+	<DirectoryFileName>Demo</DirectoryFileName>
+	<Ecus type="PrimaTestCaseLibrary.RestBusSimulation.EcusImpl">
+		<EcusImpl>
+			<name>Nodes</name>
+			<ChildNamePrefix>node</ChildNamePrefix>
+		</EcusImpl>
+	</Ecus>
+	<Functions type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.FunctionsImpl">
+		<FunctionsImpl>
+			<name>Modules</name>
+			<ChildNamePrefix>g_module</ChildNamePrefix>
+			<Functions>
+				<Function type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.IFunctionImpl">
+					<IFunctionImpl>
+						<name>g_module_aux_methods</name>
+						<FileUrl>g_module_aux_methods.py</FileUrl>
+						<id>Modules_Module0</id>
+					</IFunctionImpl>
+				</Function>
+			</Functions>
+			<GroupeNamePrefix>g_group</GroupeNamePrefix>
+		</FunctionsImpl>
+	</Functions>
+	<Messages type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.MessagesImpl">
+		<MessagesImpl>
+			<name>Messages</name>
+			<ChildNamePrefix>msg</ChildNamePrefix>
+			<Messages>
+				<Message type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.MessageEtherImpl">
+					<MessageEtherImpl>
+						<name>g_ethernet_msg</name>
+						<additional_fields>
+							<KeyValue_Field type="PrimaTestCaseLibrary.Utils.KeyValue_Field">
+								<KeyValue_Field>
+									<key>Cycle</key>
+									<value>1000</value>
+								</KeyValue_Field>
+							</KeyValue_Field>
+							<KeyValue_Field type="PrimaTestCaseLibrary.Utils.KeyValue_Field">
+								<KeyValue_Field>
+									<key>InitialDelay</key>
+									<value>0</value>
+								</KeyValue_Field>
+							</KeyValue_Field>
+							<KeyValue_Field type="PrimaTestCaseLibrary.Utils.KeyValue_Field">
+								<KeyValue_Field>
+									<key>Repetition</key>
+									<value>0</value>
+								</KeyValue_Field>
+							</KeyValue_Field>
+							<KeyValue_Field type="PrimaTestCaseLibrary.Utils.KeyValue_Field">
+								<KeyValue_Field>
+									<key>Payload</key>
+									<value>0102030409</value>
+								</KeyValue_Field>
+							</KeyValue_Field>
+						</additional_fields>
+						<auto_save>false</auto_save>
+						<ethertype>0</ethertype>
+						<mac_address_destination>02:00:4C:4F:4F:50</mac_address_destination>
+						<mac_address_source>6C:3C:8C:12:0D:17</mac_address_source>
+						<ReceiverAdapter_id>Stimulation</ReceiverAdapter_id>
+						<reset_flag>false</reset_flag>
+						<SenderAdapter_id>Stimulation</SenderAdapter_id>
+						<vlan_tag type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.VlanImpl">
+							<VlanImpl>
+								<inner_priority_tag>0</inner_priority_tag>
+								<outer_vlan_ethertype>37120</outer_vlan_ethertype>
+							</VlanImpl>
+						</vlan_tag>
+					</MessageEtherImpl>
+				</Message>
+				<Message type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.MessageCANImpl">
+					<MessageCANImpl>
+						<name>g_can_msg</name>
+						<additional_fields>
+							<KeyValue_Field type="PrimaTestCaseLibrary.Utils.KeyValue_Field">
+								<KeyValue_Field>
+									<key>Cycle</key>
+									<value>1000</value>
+								</KeyValue_Field>
+							</KeyValue_Field>
+							<KeyValue_Field type="PrimaTestCaseLibrary.Utils.KeyValue_Field">
+								<KeyValue_Field>
+									<key>InitialDelay</key>
+									<value>0</value>
+								</KeyValue_Field>
+							</KeyValue_Field>
+							<KeyValue_Field type="PrimaTestCaseLibrary.Utils.KeyValue_Field">
+								<KeyValue_Field>
+									<key>Repetition</key>
+									<value>0</value>
+								</KeyValue_Field>
+							</KeyValue_Field>
+							<KeyValue_Field type="PrimaTestCaseLibrary.Utils.KeyValue_Field">
+								<KeyValue_Field>
+									<key>Payload</key>
+								</KeyValue_Field>
+							</KeyValue_Field>
+						</additional_fields>
+						<auto_calculate>
+							<AutoCalculate>All</AutoCalculate>
+						</auto_calculate>
+						<auto_save>false</auto_save>
+						<can_header type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.CANHeaderImpl">
+							<CANHeaderImpl>
+								<message_id>257</message_id>
+								<brs>true</brs>
+								<length>2</length>
+							</CANHeaderImpl>
+						</can_header>
+						<fd>true</fd>
+						<ReceiverAdapter_id>MediaGateway</ReceiverAdapter_id>
+						<reset_flag>false</reset_flag>
+						<SenderAdapter_id>MediaGateway</SenderAdapter_id>
+						<Type>CAN Frame</Type>
+					</MessageCANImpl>
+				</Message>
+				<Message type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.MessageSDImpl">
+					<MessageSDImpl>
+						<name>g_sd_msg_1</name>
+						<additional_fields>
+							<KeyValue_Field type="PrimaTestCaseLibrary.Utils.KeyValue_Field">
+								<KeyValue_Field>
+									<key>Cycle</key>
+									<value>1000</value>
+								</KeyValue_Field>
+							</KeyValue_Field>
+							<KeyValue_Field type="PrimaTestCaseLibrary.Utils.KeyValue_Field">
+								<KeyValue_Field>
+									<key>InitialDelay</key>
+									<value>0</value>
+								</KeyValue_Field>
+							</KeyValue_Field>
+							<KeyValue_Field type="PrimaTestCaseLibrary.Utils.KeyValue_Field">
+								<KeyValue_Field>
+									<key>Repetition</key>
+									<value>0</value>
+								</KeyValue_Field>
+							</KeyValue_Field>
+							<KeyValue_Field type="PrimaTestCaseLibrary.Utils.KeyValue_Field">
+								<KeyValue_Field>
+									<key>Payload</key>
+									<value>000000000000000000000000</value>
+								</KeyValue_Field>
+							</KeyValue_Field>
+						</additional_fields>
+						<auto_save>false</auto_save>
+						<Packet type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.UDPPacketImpl">
+							<UDPPacketImpl>
+								<ParentPacket type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.IPPacketImpl">
+									<IPPacketImpl>
+										<ip_address_destination>239.192.255.251</ip_address_destination>
+										<ip_address_source_prop>Auto</ip_address_source_prop>
+										<ParentPacket type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.EthernetFrameImpl">
+											<EthernetFrameImpl>
+												<mac_address_destination>01:00:5e:40:ff:fb</mac_address_destination>
+												<mac_address_source_prop>C4:7D:46:1E:BA:AA</mac_address_source_prop>
+												<vlan_tag type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.VlanImpl">
+													<VlanImpl>
+														<inner_priority_tag>0</inner_priority_tag>
+														<outer_vlan_ethertype>37120</outer_vlan_ethertype>
+													</VlanImpl>
+												</vlan_tag>
+											</EthernetFrameImpl>
+										</ParentPacket>
+									</IPPacketImpl>
+								</ParentPacket>
+								<port_destination>30490</port_destination>
+								<port_source>30490</port_source>
+							</UDPPacketImpl>
+						</Packet>
+						<ReceiverAdapter_id>Stimulation</ReceiverAdapter_id>
+						<reset_flag>true</reset_flag>
+						<SenderAdapter_id>Stimulation</SenderAdapter_id>
+						<someip_sd_header type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.SDHeaderImpl">
+							<SDHeaderImpl />
+						</someip_sd_header>
+					</MessageSDImpl>
+				</Message>
+				<Message type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.MessageIpImpl">
+					<MessageIpImpl>
+						<name>ipv4_msg</name>
+						<auto_save>false</auto_save>
+						<Packet type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.IPPacketImpl">
+							<IPPacketImpl>
+								<ip_address_destination>169.254.215.16</ip_address_destination>
+								<ip_address_source_prop>Auto</ip_address_source_prop>
+								<ParentPacket type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.EthernetFrameImpl">
+									<EthernetFrameImpl>
+										<mac_address_destination>02:00:4C:4F:4F:50</mac_address_destination>
+										<mac_address_source_prop>6C:3C:8C:12:0D:17</mac_address_source_prop>
+										<vlan_tag type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.VlanImpl">
+											<VlanImpl>
+												<inner_priority_tag>0</inner_priority_tag>
+												<outer_vlan_ethertype>37120</outer_vlan_ethertype>
+											</VlanImpl>
+										</vlan_tag>
+									</EthernetFrameImpl>
+								</ParentPacket>
+							</IPPacketImpl>
+						</Packet>
+						<ReceiverAdapter_id>Stimulation</ReceiverAdapter_id>
+						<reset_flag>false</reset_flag>
+						<SenderAdapter_id>Stimulation</SenderAdapter_id>
+					</MessageIpImpl>
+				</Message>
+				<Message type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.MessageEtherImpl">
+					<MessageEtherImpl>
+						<name>ethernet_msg_1</name>
+						<auto_save>false</auto_save>
+						<ethertype>0</ethertype>
+						<mac_address_destination>02:00:4C:4F:4F:50</mac_address_destination>
+						<mac_address_source>6C:3C:8C:12:0D:17</mac_address_source>
+						<ReceiverAdapter_id>Stimulation</ReceiverAdapter_id>
+						<reset_flag>false</reset_flag>
+						<SenderAdapter_id>Stimulation</SenderAdapter_id>
+						<vlan_tag type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.VlanImpl">
+							<VlanImpl>
+								<inner_priority_tag>0</inner_priority_tag>
+								<outer_vlan_ethertype>37120</outer_vlan_ethertype>
+							</VlanImpl>
+						</vlan_tag>
+					</MessageEtherImpl>
+				</Message>
+				<Message type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.MessageIpImpl">
+					<MessageIpImpl>
+						<name>g_ipv4_msg</name>
+						<auto_save>false</auto_save>
+						<Packet type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.IPPacketImpl">
+							<IPPacketImpl>
+								<ip_address_destination>169.254.215.16</ip_address_destination>
+								<ip_address_source_prop>Auto</ip_address_source_prop>
+								<ParentPacket type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.EthernetFrameImpl">
+									<EthernetFrameImpl>
+										<mac_address_destination>FF:FF:FF:FF:FF:FF</mac_address_destination>
+										<mac_address_source_prop>02:00:4C:4F:4F:50</mac_address_source_prop>
+										<vlan_tag type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.VlanImpl">
+											<VlanImpl>
+												<inner_priority_tag>0</inner_priority_tag>
+												<outer_vlan_ethertype>37120</outer_vlan_ethertype>
+											</VlanImpl>
+										</vlan_tag>
+									</EthernetFrameImpl>
+								</ParentPacket>
+							</IPPacketImpl>
+						</Packet>
+						<ReceiverAdapter_id>Stimulation</ReceiverAdapter_id>
+						<reset_flag>false</reset_flag>
+						<SenderAdapter_id>Stimulation</SenderAdapter_id>
+					</MessageIpImpl>
+				</Message>
+			</Messages>
+		</MessagesImpl>
+	</Messages>
+	<Panels type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.PanelsImpl">
+		<PanelsImpl>
+			<name>Panels</name>
+			<ChildNamePrefix>panel</ChildNamePrefix>
+		</PanelsImpl>
+	</Panels>
+	<ScriptNodes type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.NodesImpl">
+		<NodesImpl>
+			<name>Scripts</name>
+			<ChildNamePrefix>script</ChildNamePrefix>
+			<Nodes>
+				<Script type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.NodeImpl">
+					<NodeImpl>
+						<name>basic_loopback</name>
+						<DocumentId>e11ef04b-bc49-416d-92c6-4cf8c97b7e6d</DocumentId>
+						<FileUrl>basic_loopback.py</FileUrl>
+						<isActive>false</isActive>
+					</NodeImpl>
+				</Script>
+				<Script type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.NodeImpl">
+					<NodeImpl>
+						<name>MediaGateway_2_CANcase</name>
+						<DocumentId>ba0c9107-6129-41ab-87db-fb5200bb63a5</DocumentId>
+						<FileUrl>MediaGateway_2_CANcase.py</FileUrl>
+						<isActive>false</isActive>
+					</NodeImpl>
+				</Script>
+				<Script type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.NodeImpl">
+					<NodeImpl>
+						<name>ip_script_send</name>
+						<DocumentId>770774ae-55e9-4a38-9c8c-31bc87edbb6d</DocumentId>
+						<FileUrl>ip_script_send.py</FileUrl>
+						<isActive>false</isActive>
+					</NodeImpl>
+				</Script>
+				<Script type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.NodeImpl">
+					<NodeImpl>
+						<name>ip_script_receive</name>
+						<DocumentId>6647f239-2d19-442a-9329-6e54dc1f94cd</DocumentId>
+						<FileUrl>ip_script_receive.py</FileUrl>
+						<isActive>false</isActive>
+					</NodeImpl>
+				</Script>
+				<Script type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.NodeImpl">
+					<NodeImpl>
+						<name>ethernet_script_send</name>
+						<DocumentId>b39cc1d4-4dc5-45dd-90df-416a6721f21f</DocumentId>
+						<FileUrl>ethernet_script_send.py</FileUrl>
+						<isActive>false</isActive>
+					</NodeImpl>
+				</Script>
+				<Script type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.NodeImpl">
+					<NodeImpl>
+						<name>ethernet_script_recieve</name>
+						<DocumentId>90b1211e-f01b-4445-a4e3-d7f0888204d7</DocumentId>
+						<FileUrl>ethernet_script_recieve.py</FileUrl>
+						<isActive>false</isActive>
+					</NodeImpl>
+				</Script>
+				<Script type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.NodeImpl">
+					<NodeImpl>
+						<name>script_1</name>
+						<DocumentId>d5511b33-f59b-495c-9e86-f06166bb04ea</DocumentId>
+						<FileUrl>script_1.py</FileUrl>
+						<isActive>false</isActive>
+					</NodeImpl>
+				</Script>
+				<Script type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.NodeImpl">
+					<NodeImpl>
+						<name>GUI2</name>
+						<DocumentId>be0009ed-f95f-4965-b136-9fcb8e58004b</DocumentId>
+						<FileUrl>GUI2.py</FileUrl>
+						<isActive>false</isActive>
+					</NodeImpl>
+				</Script>
+				<Script type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.NodeImpl">
+					<NodeImpl>
+						<name>script_2</name>
+						<DocumentId>2df11361-f7c2-46e3-9d75-b9e8b702f6d6</DocumentId>
+						<FileUrl>script_2.py</FileUrl>
+						<isActive>false</isActive>
+					</NodeImpl>
+				</Script>
+				<Script type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.NodeImpl">
+					<NodeImpl>
+						<name>ANDi_GUI</name>
+						<DocumentId>2dedb9ca-9584-48d3-b97d-7432d3b8873f</DocumentId>
+						<FileUrl>ANDi_GUI.py</FileUrl>
+						<isActive>false</isActive>
+					</NodeImpl>
+				</Script>
+			</Nodes>
+			<TestSuitePrefix>scripts_group</TestSuitePrefix>
+		</NodesImpl>
+	</ScriptNodes>
+	<spec_reference>Bmw</spec_reference>
+	<Timers type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.TimersImpl">
+		<TimersImpl>
+			<name>Timers</name>
+			<ChildNamePrefix>g_timer</ChildNamePrefix>
+		</TimersImpl>
+	</Timers>
+	<version>1.16.0</version>
+</TestProjectImpl>
